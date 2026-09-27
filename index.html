@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BookNest - Online Book Store</title>
+
+<link rel="stylesheet" href="Project.css">
+
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <a href="#" class="logo">
+        <h2>📚 BookNest</h2>
+    </a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Service">Services</a></li>
+        <li><a href="#Products">Books</a></li>
+        <li><a href="#Categories">Categories</a></li>
+        <li><a href="#About">About</a></li>
+    </ul>
+
+    <div class="header-btn">
+        <a href="#" class="sign-up">Sign Up</a>
+        <a href="#" class="sign-in">Sign In</a>
+    </div>
+
+</header>
+
+
+<!-- HOME -->
+
+<section class="Home" id="Home">
+
+    <div class="text">
+
+        <h1>
+            <span>Discover</span><br>
+            Your Next Favourite Book
+        </h1>
+
+        <p>
+            Explore thousands of books from different genres and authors.
+        </p>
+
+        <p>
+            Find your favourite stories, academic books, novels and
+            self-development books all in one place.
+        </p>
+
+        <div class="search-box">
+
+            <input type="text" placeholder="Search for a book...">
+
+            <button>
+                <i class="bx bx-search"></i>
+                Search
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ORDER FORM -->
+
+    <div class="form-container">
+
+        <h2>Order Your Book</h2>
+
+        <form action="#" method="post">
+
+            <select name="category" required>
+
+                <option value="" disabled selected>
+                    Select Book Category
+                </option>
+
+                <option>Fiction</option>
+                <option>Mystery</option>
+                <option>Science</option>
+                <option>Technology</option>
+                <option>Self Help</option>
+                <option>Academic</option>
+
+            </select>
+
+            <select name="book" required>
+
+                <option value="" disabled selected>
+                    Select Book
+                </option>
+
+                <option>Atomic Habits</option>
+                <option>Harry Potter</option>
+                <option>The Alchemist</option>
+                <option>Rich Dad Poor Dad</option>
+                <option>Clean Code</option>
+                <option>Ikigai</option>
+
+            </select>
+
+            <input type="number"
+                name="quantity"
+                placeholder="Quantity"
+                min="1"
+                required>
+
+            <input type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+            <input type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+            <input type="tel"
+                name="phone"
+                placeholder="Your Phone"
+                required>
+
+            <textarea
+                name="message"
+                placeholder="Delivery Address"
+                rows="3"
+                required></textarea>
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="service" id="Service">
+
+    <div class="heading">
+
+        <span>How It Works</span>
+
+        <h1>
+            Get your favourite books delivered to your doorstep
+        </h1>
+
+    </div>
+
+
+    <div class="service-container">
+
+        <div class="box">
+
+            <i class="bx bx-search"></i>
+
+            <h2>Browse Books</h2>
+
+            <p>
+                Explore our large collection of books from
+                different genres and categories.
+            </p>
+
+        </div>
+
+
+        <div class="box">
+
+            <i class="bx bx-cart"></i>
+
+            <h2>Place an Order</h2>
+
+            <p>
+                Select your favourite book and place your order
+                using our simple ordering system.
+            </p>
+
+        </div>
+
+
+        <div class="box">
+
+            <i class="bx bx-package"></i>
+
+            <h2>Fast Delivery</h2>
+
+            <p>
+                Your books will be carefully packed and
+                delivered directly to your doorstep.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- BOOKS -->
+
+<section class="products" id="Products">
+
+    <div class="heading">
+
+        <span>Best Sellers</span>
+
+        <h1>
+            Explore Our Popular Books
+        </h1>
+
+    </div>
+
+
+    <div class="products-container">
+
+
+        <!-- BOOK 1 -->
+
+        <div class="box">
+
+            <img src="images/book1.jpeg"
+                alt="Atomic Habits">
+
+            <span class="category">
+                Self Help
+            </span>
+
+            <h2>Atomic Habits</h2>
+
+            <p>James Clear</p>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <h3>
+                ₹499
+                <del>₹699</del>
+            </h3>
+
+            <a href="#Home" class="btn">
+                Order Now
+            </a>
+
+        </div>
+
+
+        <!-- BOOK 2 -->
+
+        <div class="box">
+
+            <img src="images/book2.jpeg"
+                alt="The Alchemist">
+
+            <span class="category">
+                Fiction
+            </span>
+
+            <h2>The Alchemist</h2>
+
+            <p>Paulo Coelho</p>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <h3>
+                ₹299
+                <del>₹399</del>
+            </h3>
+
+            <a href="#Home" class="btn">
+                Order Now
+            </a>
+
+        </div>
+
+
+        <!-- BOOK 3 -->
+
+        <div class="box">
+
+            <img src="images/book3.jpeg"
+                alt="Rich Dad Poor Dad">
+
+            <span class="category">
+                Finance
+            </span>
+
+            <h2>Rich Dad Poor Dad</h2>
+
+            <p>Robert Kiyosaki</p>
+
+            <div class="rating">
+                ⭐⭐⭐⭐☆
+            </div>
+
+            <h3>
+                ₹399
+                <del>₹550</del>
+            </h3>
+
+            <a href="#Home" class="btn">
+                Order Now
+            </a>
+
+        </div>
+
+
+        <!-- BOOK 4 -->
+
+        <div class="box">
+
+            <img src="images/book4.jpeg"
+                alt="Harry Potter">
+
+            <span class="category">
+                Fantasy
+            </span>
+
+            <h2>Harry Potter</h2>
+
+            <p>J.K. Rowling</p>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <h3>
+                ₹599
+                <del>₹799</del>
+            </h3>
+
+            <a href="#Home" class="btn">
+                Order Now
+            </a>
+
+        </div>
+
+
+        <!-- BOOK 5 -->
+
+        <div class="box">
+
+            <img src="images/book5.jpeg"
+                alt="Clean Code">
+
+            <span class="category">
+                Technology
+            </span>
+
+            <h2>Clean Code</h2>
+
+            <p>Robert C. Martin</p>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <h3>
+                ₹699
+                <del>₹899</del>
+            </h3>
+
+            <a href="#Home" class="btn">
+                Order Now
+            </a>
+
+        </div>
+
+
+        <!-- BOOK 6 -->
+
+        <div class="box">
+
+            <img src="images/book6.jpeg"
+                alt="Ikigai">
+
+            <span class="category">
+                Lifestyle
+            </span>
+
+            <h2>Ikigai</h2>
+
+            <p>Héctor García</p>
+
+            <div class="rating">
+                ⭐⭐⭐⭐☆
+            </div>
+
+            <h3>
+                ₹349
+                <del>₹499</del>
+            </h3>
+
+            <a href="#Home" class="btn">
+                Order Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="categories" id="Categories">
+
+    <div class="heading">
+
+        <span>Book Categories</span>
+
+        <h1>
+            Find Books According to Your Interest
+        </h1>
+
+    </div>
+
+
+    <div class="category-container">
+
+        <div class="category-box">
+            📖
+            <h2>Fiction</h2>
+            <p>Stories, novels and adventures</p>
+        </div>
+
+        
+
+        <div class="category-box">
+            🔍
+            <h2>Mystery</h2>
+            <p>Thrillers and detective stories</p>
+        </div>
+
+        <div class="category-box">
+            💻
+            <h2>Technology</h2>
+            <p>Programming and computer science</p>
+        </div>
+
+        <div class="category-box">
+            🧠
+            <h2>Self Help</h2>
+            <p>Personal growth and motivation</p>
+        </div>
+
+        <div class="category-box">
+            🎓
+            <h2>Academic</h2>
+            <p>College and competitive exams</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="About">
+
+    <div class="heading">
+
+        <span>About Us</span>
+
+        <h1>
+            Welcome to BookNest
+        </h1>
+
+    </div>
+
+
+    <div class="about-container">
+
+        <div class="about-img">
+
+            <img src="img/bookstore.jpg"
+                alt="Book Store">
+
+        </div>
+
+
+        <div class="about-text">
+
+            <p>
+
+                BookNest is an online bookstore created for
+                passionate readers and students.
+
+                <br><br>
+
+                Our goal is to make books easily accessible
+                to everyone by bringing different genres and
+                categories together on one platform.
+
+                <br><br>
+
+                From fiction and romance to technology,
+                academic and self-development books,
+                BookNest provides a collection for every
+                type of reader.
+
+                <br><br>
+
+                We believe that every book has the power
+                to educate, inspire and transform lives.
+
+            </p>
+
+            <a href="#" class="btn">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>📚 BookNest</h2>
+
+    <p>
+        Your destination for books, knowledge and imagination.
+    </p>
+
+    <div class="social">
+
+        <i class="bx bxl-instagram"></i>
+        <i class="bx bxl-facebook"></i>
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-whatsapp"></i>
+
+    </div>
+
+    <p>
+        © 2026 BookNest. All Rights Reserved.
+    </p>
+
+</footer>
+```
+
+</body>
+
+</html>
